@@ -8,19 +8,13 @@ public class MyChar {
 		this.myChar = myChar;
 	}
 
-	
-	
 	public char getMyChar() {
 		return myChar;
 	}
 
-
-
 	public void setMyChar(char myChar) {
 		this.myChar = myChar;
 	}
-
-
 
 	public boolean isVowel() {
 		if(myChar == 'a' || myChar == 'e' || myChar == 'i' || myChar == 'o' || myChar == 'u' ||
@@ -33,8 +27,7 @@ public class MyChar {
 	}
 	
 	public boolean isConsonant() {
-		
-		if (!isVowel()) {
+		if (isAlphabet() && !isVowel()) {
 			return true;
 		}
 		return false;
@@ -56,11 +49,15 @@ public class MyChar {
 	}
 
 	public static void printLowerCaseAlphabets() {
-		
+		for(char ch = 'a'; ch <= 'z'; ch++) {
+			System.out.print(ch + ", ");
+		}
 	}
 
 	public static void printUpperCaseAlphabets() {
-		
+		for(char ch = 'A'; ch <= 'Z'; ch++) {
+			System.out.print(ch + ", ");
+		}
 	}
 	
 	
